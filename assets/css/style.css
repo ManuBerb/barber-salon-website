@@ -249,7 +249,10 @@ body {
 
 .navbar-list {
   border-block-start: 1px solid var(--jet);
+  margin-block: 25px;
 }
+
+.navbar-item { border-block-end: 1px solid var(--jet)}
 
 /*-----------------------------------*\
   #HERO
