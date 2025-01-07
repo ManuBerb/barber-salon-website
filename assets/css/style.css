@@ -252,7 +252,19 @@ body {
   margin-block: 25px;
 }
 
-.navbar-item { border-block-end: 1px solid var(--jet)}
+.navbar-item { border-block-end: 1px solid var(--jet); }
+
+.navbar-link {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 10px 30px;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--indian-yellow); }
 
 /*-----------------------------------*\
   #HERO
