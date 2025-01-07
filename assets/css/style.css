@@ -132,7 +132,6 @@ body {
   color: var(--sonic-silver);
   font-size: 1.6rem;
   line-height: 2;
-  height: 300vh;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -146,7 +145,44 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding: ;}
+.container { padding-inline: 15px ;}
+.section{ padding-block: var(--section-padding);}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  position: absolute;
+  content: "";
+}
+
+.has-bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: var(--ff-oswald);
+  line-height: 1.3;
+}
+
+.h1,
+.h2 { text-transform: uppercase; }
+
+.h1,
+.h3{ font-weight: var(--fw-600);}
+
+.h1 {
+  color: var(--white);
+  font-size: var(--fs-40);
+}
 
 
 /*-----------------------------------*\
